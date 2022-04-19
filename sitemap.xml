@@ -2,20 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://cheinchi.github.io/</loc>
+    <loc>https://lastknightcoder.github.io/post/blog4/</loc>
+    <lastmod>2022-04-19T21:00:14+08:00</lastmod>
+  </url><url>
+    <loc>https://lastknightcoder.github.io/</loc>
+    <lastmod>2022-04-19T21:00:14+08:00</lastmod>
+  </url><url>
+    <loc>https://lastknightcoder.github.io/post/</loc>
+    <lastmod>2022-04-19T21:00:14+08:00</lastmod>
+  </url><url>
+    <loc>https://lastknightcoder.github.io/post/blog3/</loc>
+    <lastmod>2022-04-19T20:51:26+08:00</lastmod>
+  </url><url>
+    <loc>https://lastknightcoder.github.io/post/blog2/</loc>
     <lastmod>2022-04-19T20:05:40+08:00</lastmod>
   </url><url>
-    <loc>https://cheinchi.github.io/post/</loc>
-    <lastmod>2022-04-19T20:05:40+08:00</lastmod>
-  </url><url>
-    <loc>https://cheinchi.github.io/post/blog2/</loc>
-    <lastmod>2022-04-19T20:05:40+08:00</lastmod>
-  </url><url>
-    <loc>https://cheinchi.github.io/post/blog/</loc>
+    <loc>https://lastknightcoder.github.io/post/blog/</loc>
     <lastmod>2022-04-19T15:43:47+08:00</lastmod>
   </url><url>
-    <loc>https://cheinchi.github.io/categories/</loc>
+    <loc>https://lastknightcoder.github.io/categories/</loc>
   </url><url>
-    <loc>https://cheinchi.github.io/tags/</loc>
+    <loc>https://lastknightcoder.github.io/tags/</loc>
   </url>
 </urlset>
