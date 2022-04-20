@@ -1,28 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Cheinchi&#39;s Blog</title>
+    <title>Categories on Cheinchi Website</title>
     <link>https://cheinchi.github.io/categories/</link>
-    <description>Recent content in Categories on Cheinchi&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 26 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://cheinchi.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>themes</title>
-      <link>https://cheinchi.github.io/categories/themes/</link>
-      <pubDate>Tue, 26 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://cheinchi.github.io/categories/themes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>syntax</title>
-      <link>https://cheinchi.github.io/categories/syntax/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://cheinchi.github.io/categories/syntax/</guid>
-      <description></description>
-    </item>
-    
+    <description>Recent content in Categories on Cheinchi Website</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://cheinchi.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Cheinchi&#39;s Blog</title>
+    <title>Posts on Cheinchi Website</title>
     <link>https://cheinchi.github.io/posts/</link>
-    <description>Recent content in Posts on Cheinchi&#39;s Blog</description>
+    <description>Recent content in Posts on Cheinchi Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Tue, 19 Apr 2022 20:51:26 +0800</lastBuildDate><atom:link href="https://cheinchi.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -25,66 +25,12 @@
     </item>
     
     <item>
-      <title>Blog</title>
+      <title>本体与常无：经济学方法论对话</title>
       <link>https://cheinchi.github.io/posts/blog/</link>
       <pubDate>Tue, 19 Apr 2022 15:43:47 +0800</pubDate>
       
       <guid>https://cheinchi.github.io/posts/blog/</guid>
       <description>本体与常无：经济学方法论对话（与林老师对话） 林毅夫 第3章 与林老师对话——论经济学方法 我个人认为理论的目的是解释现象，当一个理论不能解释我们观察到的现象</description>
-    </item>
-    
-    <item>
-      <title>Diagram Support</title>
-      <link>https://cheinchi.github.io/posts/diagram-support/</link>
-      <pubDate>Wed, 31 Mar 2021 13:11:22 +0800</pubDate>
-      
-      <guid>https://cheinchi.github.io/posts/diagram-support/</guid>
-      <description>&lt;p&gt;Eureka supports the rendering of diagrams by using Mermaid.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Math Support</title>
-      <link>https://cheinchi.github.io/posts/math-support/</link>
-      <pubDate>Fri, 20 Nov 2020 22:52:56 +0800</pubDate>
-      
-      <guid>https://cheinchi.github.io/posts/math-support/</guid>
-      <description>&lt;p&gt;Eureka supports the rendering of mathematical formulas by using KaTeX.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Featured Image</title>
-      <link>https://cheinchi.github.io/posts/featured-image/</link>
-      <pubDate>Tue, 26 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://cheinchi.github.io/posts/featured-image/</guid>
-      <description>&lt;p&gt;Maecenas maximus, elit in ornare porttitor, nisi eros hendrerit nisl, sed fermentum nulla urna blandit tellus.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Markdown Syntax Guide</title>
-      <link>https://cheinchi.github.io/posts/markdown-syntax/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://cheinchi.github.io/posts/markdown-syntax/</guid>
-      <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Placeholder Text</title>
-      <link>https://cheinchi.github.io/posts/placeholder-text/</link>
-      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://cheinchi.github.io/posts/placeholder-text/</guid>
-      <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Emoji Support</title>
-      <link>https://cheinchi.github.io/posts/emoji-support/</link>
-      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://cheinchi.github.io/posts/emoji-support/</guid>
-      <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
     </item>
     
   </channel>
