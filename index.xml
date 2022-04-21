@@ -2,79 +2,88 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cheinchi Website</title>
-    <link>https://cheinchi.github.io/</link>
+    <link>/</link>
     <description>Recent content on Cheinchi Website</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 19 Apr 2022 20:51:26 +0800</lastBuildDate><atom:link href="https://cheinchi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 19 Apr 2022 20:51:26 +0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>置身事内</title>
-      <link>https://cheinchi.github.io/posts/blog3/</link>
+      <link>/posts/blog3/</link>
       <pubDate>Tue, 19 Apr 2022 20:51:26 +0800</pubDate>
       
-      <guid>https://cheinchi.github.io/posts/blog3/</guid>
+      <guid>/posts/blog3/</guid>
       <description>置身事内 兰小欢 复旦大学经济学副教授 土地流转雨户籍改革 而要让建设用地指标流转起来，首先是让农村集体用地参与流转。 2008 十七届三中全会：逐步建立城乡统一的建设</description>
     </item>
     
     <item>
       <title>大国大城</title>
-      <link>https://cheinchi.github.io/posts/blog2/</link>
+      <link>/posts/blog2/</link>
       <pubDate>Tue, 19 Apr 2022 20:05:40 +0800</pubDate>
       
-      <guid>https://cheinchi.github.io/posts/blog2/</guid>
+      <guid>/posts/blog2/</guid>
       <description>大国大城 第一章 中国经济的欧洲化 欧债危机 欧洲正在经历大考 触及了欧元深层次矛盾：当结成欧元区的国家存在巨大发展差距时，统一货币的麻烦开始凸显。 要么救希腊维</description>
     </item>
     
     <item>
       <title>本体与常无：经济学方法论对话</title>
-      <link>https://cheinchi.github.io/posts/blog/</link>
+      <link>/posts/blog/</link>
       <pubDate>Tue, 19 Apr 2022 15:43:47 +0800</pubDate>
       
-      <guid>https://cheinchi.github.io/posts/blog/</guid>
+      <guid>/posts/blog/</guid>
       <description>本体与常无：经济学方法论对话（与林老师对话） 林毅夫 第3章 与林老师对话——论经济学方法 我个人认为理论的目的是解释现象，当一个理论不能解释我们观察到的现象</description>
     </item>
     
     <item>
+      <title>江村经济</title>
+      <link>/posts/blog4/</link>
+      <pubDate>Tue, 19 Apr 2022 15:43:47 +0800</pubDate>
+      
+      <guid>/posts/blog4/</guid>
+      <description>江村经济 费孝通 第一章 前言 如果要组织有效果的行动并达到预期的目的，必须对社会制度的功能进行细致的分析，而且要同它们意欲满足的需要结合起来分析，也要同它们</description>
+    </item>
+    
+    <item>
       <title>Chapter 1</title>
-      <link>https://cheinchi.github.io/docs/example-doc/chapter-1/</link>
+      <link>/docs/example-doc/chapter-1/</link>
       <pubDate>Fri, 16 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://cheinchi.github.io/docs/example-doc/chapter-1/</guid>
+      <guid>/docs/example-doc/chapter-1/</guid>
       <description>&lt;p&gt;This is chapter 1 of example doc.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Chapter 1</title>
-      <link>https://cheinchi.github.io/docs/example-doc/nested-chapter/chapter-1/</link>
+      <link>/docs/example-doc/nested-chapter/chapter-1/</link>
       <pubDate>Fri, 16 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://cheinchi.github.io/docs/example-doc/nested-chapter/chapter-1/</guid>
+      <guid>/docs/example-doc/nested-chapter/chapter-1/</guid>
       <description>&lt;p&gt;This is chapter 1 of nested chapter.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Chapter 2</title>
-      <link>https://cheinchi.github.io/docs/example-doc/chapter-2/</link>
+      <link>/docs/example-doc/chapter-2/</link>
       <pubDate>Fri, 16 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://cheinchi.github.io/docs/example-doc/chapter-2/</guid>
+      <guid>/docs/example-doc/chapter-2/</guid>
       <description>&lt;p&gt;This is chapter 2 of example doc.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Chapter 2</title>
-      <link>https://cheinchi.github.io/docs/example-doc/nested-chapter/chapter-2/</link>
+      <link>/docs/example-doc/nested-chapter/chapter-2/</link>
       <pubDate>Fri, 16 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://cheinchi.github.io/docs/example-doc/nested-chapter/chapter-2/</guid>
+      <guid>/docs/example-doc/nested-chapter/chapter-2/</guid>
       <description>&lt;p&gt;This is chapter 2 of nested chapter.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://cheinchi.github.io/cv/pdf/</link>
+      <link>/cv/pdf/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cheinchi.github.io/cv/pdf/</guid>
+      <guid>/cv/pdf/</guid>
       <description>pdf **Huang Jianqi(**黄建祺） adress:Shahe Higher Education Park, Changping District, Beijing, China postal code:102206 phone: (+86)1825-010-5900 email: 2020311456@cufe.edu.cn Overview I am a sophomore at Central University of Finance and Economics, have several Research Assistant experiences, won the Honorable Prize in the American College Students Mathematical Modeling Competition in freshman year, have excellent programming skills, have excellent grades in mathematics and economics, and hopes to</description>
     </item>
     
