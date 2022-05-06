@@ -2,55 +2,53 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/</loc>
+    <loc>https://cheinchi.github.io/</loc>
+    <lastmod>2022-04-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://cheinchi.github.io/posts/</loc>
+    <lastmod>2022-04-20T22:54:47+08:00</lastmod>
+  </url><url>
+    <loc>https://cheinchi.github.io/posts/blog6/</loc>
+    <lastmod>2022-04-20T22:54:47+08:00</lastmod>
+  </url><url>
+    <loc>https://cheinchi.github.io/docs/game_theory/chapter-1/</loc>
+    <lastmod>2022-04-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://cheinchi.github.io/docs/</loc>
+    <lastmod>2022-04-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://cheinchi.github.io/posts/blog3/</loc>
     <lastmod>2022-04-19T20:51:26+08:00</lastmod>
   </url><url>
-    <loc>/posts/</loc>
-    <lastmod>2022-04-19T20:51:26+08:00</lastmod>
-  </url><url>
-    <loc>/posts/blog3/</loc>
-    <lastmod>2022-04-19T20:51:26+08:00</lastmod>
-  </url><url>
-    <loc>/posts/blog2/</loc>
+    <loc>https://cheinchi.github.io/posts/blog2/</loc>
     <lastmod>2022-04-19T20:05:40+08:00</lastmod>
   </url><url>
-    <loc>/posts/blog/</loc>
+    <loc>https://cheinchi.github.io/posts/blog/</loc>
     <lastmod>2022-04-19T15:43:47+08:00</lastmod>
   </url><url>
-    <loc>/posts/blog4/</loc>
+    <loc>https://cheinchi.github.io/posts/blog4/</loc>
     <lastmod>2022-04-19T15:43:47+08:00</lastmod>
   </url><url>
-    <loc>/docs/example-doc/chapter-1/</loc>
-    <lastmod>2020-10-16T00:00:00+00:00</lastmod>
+    <loc>https://cheinchi.github.io/docs/game_theory/chapter-2/</loc>
+    <lastmod>2022-04-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/docs/example-doc/nested-chapter/chapter-1/</loc>
-    <lastmod>2020-10-16T00:00:00+00:00</lastmod>
+    <loc>https://cheinchi.github.io/categories/</loc>
+    <lastmod>2022-04-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/docs/example-doc/chapter-2/</loc>
-    <lastmod>2020-10-16T00:00:00+00:00</lastmod>
+    <loc>https://cheinchi.github.io/categories/economics/</loc>
+    <lastmod>2022-04-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/docs/example-doc/nested-chapter/chapter-2/</loc>
-    <lastmod>2020-10-16T00:00:00+00:00</lastmod>
+    <loc>https://cheinchi.github.io/docs/game_theory/</loc>
+    <lastmod>2022-04-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/docs/</loc>
-    <lastmod>2020-10-16T00:00:00+00:00</lastmod>
+    <loc>https://cheinchi.github.io/cv/</loc>
   </url><url>
-    <loc>/docs/example-doc/</loc>
-    <lastmod>2020-10-16T00:00:00+00:00</lastmod>
+    <loc>https://cheinchi.github.io/authors/</loc>
   </url><url>
-    <loc>/docs/example-doc/nested-chapter/</loc>
-    <lastmod>2020-10-16T00:00:00+00:00</lastmod>
+    <loc>https://cheinchi.github.io/cv/cv/</loc>
   </url><url>
-    <loc>/cv/pdf/</loc>
+    <loc>https://cheinchi.github.io/series/</loc>
   </url><url>
-    <loc>/authors/</loc>
-  </url><url>
-    <loc>/categories/</loc>
-  </url><url>
-    <loc>/cv/</loc>
-  </url><url>
-    <loc>/series/</loc>
-  </url><url>
-    <loc>/tags/</loc>
+    <loc>https://cheinchi.github.io/tags/</loc>
   </url>
 </urlset>
