@@ -7,12 +7,57 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sat, 16 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://cheinchi.github.io/docs/game_theory/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Chapter 7-10</title>
+      <link>https://cheinchi.github.io/docs/game_theory/chapter-7-10/</link>
+      <pubDate>Fri, 24 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://cheinchi.github.io/docs/game_theory/chapter-7-10/</guid>
+      <description>chapter 7 斯塔克伯格模型——描述两个寡头之间的竞争 每个厂商的战略变量为产出 每个厂商做决策序贯的形式——一家厂商来产出，另一家再给出产出选择； 斯塔克伯格模型主</description>
+    </item>
+    
+    <item>
       <title>Chapter 1</title>
       <link>https://cheinchi.github.io/docs/game_theory/chapter-1/</link>
       <pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate>
       
       <guid>https://cheinchi.github.io/docs/game_theory/chapter-1/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Chapter 3</title>
+      <link>https://cheinchi.github.io/docs/game_theory/chapter-3/</link>
+      <pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://cheinchi.github.io/docs/game_theory/chapter-3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Chapter 4</title>
+      <link>https://cheinchi.github.io/docs/game_theory/chapter-4/</link>
+      <pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://cheinchi.github.io/docs/game_theory/chapter-4/</guid>
+      <description>chapter 4 离散到连续的NE Bertrand model——古诺模型从离散到连续的推广 Suppose： 当企业制定价格时，默认其他的企业都不会因为他的决策而改变； 同质化产品； 固</description>
+    </item>
+    
+    <item>
+      <title>Chapter 5</title>
+      <link>https://cheinchi.github.io/docs/game_theory/chapter-5/</link>
+      <pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://cheinchi.github.io/docs/game_theory/chapter-5/</guid>
+      <description>chapter 5 Auction A first-price auction A first-price auction the winner pays the price p he bids. highest wins and pays the price he bids Def a first-price sealed-bid auction with complete information $$ N={1,2,3&amp;hellip;n}\ A_i=[0,] \u_i=v_i-p $$ v~i~ the player i attaches to the object v~1~&amp;gt;v~2~&amp;gt;v~3~&amp;gt;v~4~…</description>
+    </item>
+    
+    <item>
+      <title>Chapter 6</title>
+      <link>https://cheinchi.github.io/docs/game_theory/chapter-6/</link>
+      <pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://cheinchi.github.io/docs/game_theory/chapter-6/</guid>
+      <description>chapter 6 Extensive game with perfect info Example 1: chain store game a chain store(CS) has a branch in a city, There is one potential competitor(C) in the city. the game proceeds a follows:C decide whether to enter the market,Given C’s choice, CS decides whether to accommodate or fight back. the profits are (0,0) (CS’s profit, C’s profit) if C enter and CS fights back, (2,2) is</description>
     </item>
     
     <item>

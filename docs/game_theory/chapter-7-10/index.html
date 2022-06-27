@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html
+  lang=""
+  dir="ltr"
+  
+><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>Chapter 7-10 | Game theory | Jianqi&#39;s Website</title>
+
+<meta name="generator" content="Hugo Eureka 0.9.1" />
+<link rel="stylesheet" href="https://cheinchi.github.io/css/eureka.min.9cec6350e37e534b0338fa9a085bf06855de3b0f2dcf857e792e5e97b07ea905d4d5513db554cbc26a9c3da622bae92d.css">
+<script defer src="https://cheinchi.github.io/js/eureka.min.f1639ee98d6cbd85b2b5f034d27320da962002ff83159ed4e01dbc5948c42a1ab26c2d6e74c66e93f5cec4d24dbd166d.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+  href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&amp;family=Noto&#43;Serif&#43;SC:wght@400;600;700&amp;display=swap"
+  as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/styles/base16/solarized-light.min.css"
+   media="print"
+  onload="this.media='all';this.onload=null" crossorigin>
+<script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/highlight.min.js"
+   crossorigin></script>
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/languages/dart.min.js"
+     crossorigin></script>
+<link rel="stylesheet" href="https://cheinchi.github.io/css/highlightjs.min.2958991528e43eb6fc9b8c4f2b8e052f79c4010718e1d1e888a777620e9ee63021c2c57ec7417a3108019bb8c41943e6.css" media="print" onload="this.media='all';this.onload=null">
+
+
+<script defer type="text/javascript" src="https://cheinchi.github.io/js/fontawesome.min.556d8a720c2607066000ad1cb5cbdc4da8e61b339cf7b111c2cea521185d942db885a421557699c1c26cddd4ea8a76b2.js"></script>
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css"
+   integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ"  media="print"
+  onload="this.media='all';this.onload=null" crossorigin>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js" 
+  integrity="sha384-VQ8d8WVFw0yHhCk5E8I86oOhv48xLpnDZx5T9GogA/Y84DcCKWXDmSDfn13bzFZY"  crossorigin></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js"
+   integrity="sha384-&#43;XBljXPPiv&#43;OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR"  crossorigin></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false },
+        { left: "\\(", right: "\\)", display: false },
+        { left: "\\[", right: "\\]", display: true }
+      ],
+    });
+  });
+</script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@8.14.0/dist/mermaid.min.js" 
+  integrity="sha384-atOyb0FxAgN9LyAc6PEf9BjgwLISyansgdH8/VXQH8p2o5vfrRgmGIJ2Sg22L0A0"  crossorigin></script>
+
+
+
+<meta name="description"
+  content="introduction about Backward induction">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1 ,
+      "name":"Docs",
+      "item":"https://cheinchi.github.io/docs/"},{
+      "@type": "ListItem",
+      "position": 2 ,
+      "name":"Game theory",
+      "item":"https://cheinchi.github.io/docs/game_theory/"},{
+      "@type": "ListItem",
+      "position": 3 ,
+      "name":"Chapter 7-10",
+      "item":"https://cheinchi.github.io/docs/game_theory/chapter-7-10/"}]
+}
+</script>
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://cheinchi.github.io/docs/game_theory/chapter-7-10/"
+    },
+    "headline": "Chapter 7-10 | Game theory | Jianqi\u0027s Website","datePublished": "2022-06-24T00:00:00+00:00",
+    "dateModified": "2022-06-27T00:00:00+00:00",
+    "wordCount":  3237 ,
+    "publisher": {
+        "@type": "Person",
+        "name": "Huang Jianqi",
+        },
+    "description": "introduction about Backward induction"
+}
+</script><meta property="og:title" content="Chapter 7-10 | Game theory | Jianqi&#39;s Website" />
+<meta property="og:type" content="article" />
+
+
+
+<meta property="og:url" content="https://cheinchi.github.io/docs/game_theory/chapter-7-10/" />
+
+
+
+<meta property="og:description" content="introduction about Backward induction" />
+
+
+
+
+
+
+<meta property="og:site_name" content="Jianqi&#39;s Website" />
+
+
+
+
+
+
+<meta property="article:published_time" content="2022-06-24T00:00:00&#43;00:00" />
+
+
+<meta property="article:modified_time" content="2022-06-27T00:00:00&#43;00:00" />
+
+
+
+<meta property="article:section" content="docs" />
+
+
+
+
+
+  <body class="flex min-h-screen flex-col">
+    <header
+      class="min-h-16 pl-scrollbar bg-secondary-bg fixed z-50 flex w-full items-center shadow-sm"
+    >
+      <div class="mx-auto w-full max-w-screen-xl"><script>
+    let storageColorScheme = localStorage.getItem("lightDarkMode")
+    if (((storageColorScheme == 'Auto' || storageColorScheme == null) && window.matchMedia("(prefers-color-scheme: dark)").matches) || storageColorScheme == "Dark") {
+        document.getElementsByTagName('html')[0].classList.add('dark')
+    }
+</script>
+<nav class="flex items-center justify-between flex-wrap px-4 py-4 md:py-0">
+    <a href="/" class="me-6 text-primary-text text-xl font-bold">Jianqi&#39;s Website</a>
+    <button id="navbar-btn" class="md:hidden flex items-center px-3 py-2" aria-label="Open Navbar">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <div id="target"
+        class="hidden block md:flex md:grow md:justify-between md:items-center w-full md:w-auto text-primary-text z-20">
+        <div class="md:flex md:h-16 text-sm md:grow pb-4 md:pb-0 border-b md:border-b-0">
+            <a href="/#about" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">About</a>
+            <a href="/cv/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">CV</a>
+            <a href="/posts/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">Posts</a>
+            <a href="/docs/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  selected-menu-item  me-4">Docs</a>
+        </div>
+
+        <div class="flex">
+            <div class="relative pt-4 md:pt-0">
+                <div class="cursor-pointer hover:text-eureka" id="lightDarkMode">
+                    <i class="fas fa-adjust"></i>
+                </div>
+                <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-30" id="is-open">
+                </div>
+                <div class="absolute flex flex-col start-0 md:start-auto end-auto md:end-0 hidden bg-secondary-bg w-48 rounded py-2 border border-tertiary-bg cursor-pointer z-40"
+                    id='lightDarkOptions'>
+                    <span class="px-4 py-1 hover:text-eureka" name="Light">Light</span>
+                    <span class="px-4 py-1 hover:text-eureka" name="Dark">Dark</span>
+                    <span class="px-4 py-1 hover:text-eureka" name="Auto">Auto</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-0" id="is-open-mobile">
+    </div>
+
+</nav>
+<script>
+    
+    let element = document.getElementById('lightDarkMode')
+    if (storageColorScheme == null || storageColorScheme == 'Auto') {
+        document.addEventListener('DOMContentLoaded', () => {
+            window.matchMedia("(prefers-color-scheme: dark)").addEventListener('change', switchDarkMode)
+        })
+    } else if (storageColorScheme == "Light") {
+        element.firstElementChild.classList.remove('fa-adjust')
+        element.firstElementChild.setAttribute("data-icon", 'sun')
+        element.firstElementChild.classList.add('fa-sun')
+    } else if (storageColorScheme == "Dark") {
+        element.firstElementChild.classList.remove('fa-adjust')
+        element.firstElementChild.setAttribute("data-icon", 'moon')
+        element.firstElementChild.classList.add('fa-moon')
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        getcolorscheme();
+        switchBurger();
+    });
+</script>
+</div>
+    </header>
+    <main class="grow pt-16">
+        <div class="pl-scrollbar">
+          <div class="mx-auto w-full max-w-screen-xl lg:px-4 xl:px-8">
+
+
+<div class="lg:pt-12">
+    <div class="flex flex-col md:flex-row bg-secondary-bg rounded">
+        <div class="md:w-1/4 lg:w-1/5 border-e">
+            <div class="sticky top-16 pt-6">
+                
+
+
+
+
+
+
+
+
+
+
+<div id="sidebar-title" class="md:hidden mx-4 px-2 pt-4 pb-2 md:border-b text-tertiary-text md:text-primary-text">
+    <span class="font-semibold">Table of Contents</span>
+    <i class='fas fa-caret-right ms-1'></i>
+</div>
+
+<div id="sidebar-toc"
+    class="hidden md:block overflow-y-auto mx-6 md:mx-0 pe-6 pt-2 md:max-h-doc-sidebar bg-primary-bg md:bg-transparent">
+    <div class="flex flex-wrap ms-4 -me-2 p-2 bg-secondary-bg md:bg-primary-bg rounded">
+        <a class=" hover:text-eureka"
+            href="https://cheinchi.github.io/docs/game_theory/">Game theory</a>
+        
+        
+        
+
+
+    </div>
+    
+<ul class="ps-6">
+    
+    
+    
+    <li class="py-2">
+        <div class="">
+            <a class=" text-eureka  hover:text-eureka"
+                href="https://cheinchi.github.io/docs/game_theory/chapter-7-10/">Chapter 7-10</a>
+        </div>
+        
+    </li>
+    
+    
+    
+    
+    <li class="py-2">
+        <div class="">
+            <a class=" hover:text-eureka"
+                href="https://cheinchi.github.io/docs/game_theory/chapter-1/">Chapter 1</a>
+        </div>
+        
+    </li>
+    
+    
+    
+    
+    <li class="py-2">
+        <div class="">
+            <a class=" hover:text-eureka"
+                href="https://cheinchi.github.io/docs/game_theory/chapter-3/">Chapter 3</a>
+        </div>
+        
+    </li>
+    
+    
+    
+    
+    <li class="py-2">
+        <div class="">
+            <a class=" hover:text-eureka"
+                href="https://cheinchi.github.io/docs/game_theory/chapter-4/">Chapter 4</a>
+        </div>
+        
+    </li>
+    
+    
+    
+    
+    <li class="py-2">
+        <div class="">
+            <a class=" hover:text-eureka"
+                href="https://cheinchi.github.io/docs/game_theory/chapter-5/">Chapter 5</a>
+        </div>
+        
+    </li>
+    
+    
+    
+    
+    <li class="py-2">
+        <div class="">
+            <a class=" hover:text-eureka"
+                href="https://cheinchi.github.io/docs/game_theory/chapter-6/">Chapter 6</a>
+        </div>
+        
+    </li>
+    
+    
+    
+    
+    <li class="py-2">
+        <div class="">
+            <a class=" hover:text-eureka"
+                href="https://cheinchi.github.io/docs/game_theory/chapter-2/">Chapter 2</a>
+        </div>
+        
+    </li>
+    
+    
+</ul>
+
+</div>
+
+
+
+
+
+            </div>
+
+        </div>
+        <div class="w-full md:w-3/4 lg:w-4/5 pb-8 pt-2 md:pt-8">
+            <div class="flex">
+                <div class="w-full lg:w-3/4 px-6">
+                    <article class="prose">
+  <h1 class="mb-4">Chapter 7-10</h1>
+
+  <div
+  class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"
+>
+  <div class="me-6 my-2">
+    <i class="fas fa-calendar me-1"></i>
+    <span
+      >2022-06-24</span
+    >
+  </div>
+  <div class="me-6 my-2">
+    <i class="fas fa-clock me-1"></i>
+    <span>7 min read</span>
+  </div>
+
+  
+
+  
+</div>
+
+
+  
+  
+
+  <h2 id="chapter-7">chapter 7</h2>
+<h3 id="斯塔克伯格模型描述两个寡头之间的竞争">斯塔克伯格模型——描述两个寡头之间的竞争</h3>
+<ul>
+<li>
+<p>每个厂商的战略变量为产出</p>
+</li>
+<li>
+<p>每个厂商做决策序贯的形式——一家厂商来产出，另一家再给出产出选择；</p>
+</li>
+</ul>
+<p>斯塔克伯格模型主要用于阐述backward induction方法的局限性</p>
+<h3 id="steckberg-equilibrium">Steckberg Equilibrium</h3>
+<h4 id="modified-sequential-move-game">Modified sequential-move game:</h4>
+<p>在这种修正的序贯博弈下：认为双方会不断地进行修正：</p>
+<p>Firm: choose q1</p>
+<p>Firm: choose q2</p>
+<h3 id="leader-foller-model">Leader-foller Model</h3>
+<p>Base comsumption:</p>
+<ul>
+<li>Heterogenous good(异质商品)</li>
+<li>demand function:
+<ul>
+<li>$ D_1(p_1,p_2) = 1-1/2p_1+1/3+p_2$</li>
+<li>$  D_2(p_1,p_2) = 1-1/2p_2+1/3+p_1$</li>
+</ul>
+</li>
+</ul>
+<h4 id="brf-of-firm-2">BRF of firm 2</h4>
+<p>$ max \ \pi_2(p_1,p_2)= (p_1,B_2(p_1)) $    ——作为先手P1而言，是已知对方p2会以BSF的方式来使得对方来应对</p>
+<h4 id="centipede-game作为一个例子说明backwards-induction-的局限性">Centipede game——作为一个例子说明backwards induction 的局限性</h4>
+<p><img src="https://cheinchi.oss-cn-hangzhou.aliyuncs.com/img/v2-561e473bbcd03f1250415688fdced016_1440w.jpg" alt="img"></p>
+<p>oucome :</p>
+<p>A={stop ,continue }</p>
+<p>a player is better off stopping th game than continue</p>
+<p>玩家在当前stop是更优的；</p>
+<h5 id="在目前对于dynamic-game唯一的分析手段只有backward-induction">在目前，对于dynamic game唯一的分析手段只有backward induction</h5>
+<p><a href="https://zhuanlan.zhihu.com/p/138671800">知乎博弈论</a></p>
+<h2 id="chapter-8-bargaining">chapter 8 Bargaining</h2>
+<h4 id="最后通牒">最后通牒</h4>
+<p><img src="https://cheinchi.oss-cn-hangzhou.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2022-04-28%2016.03.12.png" alt="截屏2022-04-28 16.03.12"></p>
+<h4 id="infomation-partition">Infomation Partition</h4>
+<ul>
+<li>
+<p>a partition of X\Z</p>
+</li>
+<li>
+<p>节点x属于信息集合$ h(x)$</p>
+</li>
+<li>
+<p>player $i(h)\in N$移动在每一个节点x在信息集合h下；</p>
+</li>
+<li>
+<p>$ i(h)$知道他在h，但不知道是哪一个；</p>
+</li>
+</ul>
+<p><strong>Actions</strong>：</p>
+<p>A(x)是可选行为$ x\in X/Z$对于所有的i(X)来说；</p>
+<p><strong>策略</strong>：</p>
+<h4 id="连续的和离散的">连续的和离散的</h4>
+<h5 id="一阶段的bargaining">一阶段的Bargaining</h5>
+<p>decision node：</p>
+<p>player 1: 1</p>
+<p>play 2 : NAN</p>
+<p>对于不同决策点有相同的决策安排{0,1}</p>
+<p>寻求SPE（子博弈均衡）</p>
+<p>首先应用BI，player 2选择Y一定是不弱于N的，因此如何让2选择Y不背离就需要考虑1的选择，s=1；</p>
+<p>Player 2 declares if palyer 1 give him more than half of benefit he will commit.（但这个是无效的declare）</p>
+<p><strong>从play 2的决策去遍历所有players 的决策组合：可以得到</strong></p>
+<p><img src="https://cheinchi.oss-cn-hangzhou.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2022-04-28%2016.46.25.png" alt="截屏2022-04-28 16.46.25"></p>
+<p>在离散条件下的结果会略有不同：在player1给出次弱的offer时候，player2 仍然会选择接受：若不接受payoff=0</p>
+<p>对于player1 来说选择更优的条件是s=1，但若player 2 declare refuse if s&gt;=0.9（对于player 2来说给1，拒绝或接受都是一样的不占优的结果）——这时候的威胁其实是有效的；</p>
+<h4 id="ne与spe的区别核心威胁是否可信">NE与SPE的区别核心：威胁是否可信</h4>
+<ul>
+<li>
+<p>NE有两个：（默许，进入）和（竞争，不进入）</p>
+</li>
+<li>
+<p>SPE只有一个：（默许，进入）</p>
+</li>
+</ul>
+<p>（竞争，不进入）——潜在的假设，无论B选择什么，A都会选择竞争（单方面不背离）可以认为这是A在一开始就说的威胁，让B不进入；</p>
+<p>但威胁不可信，A在B之后选择，B选择进入，A选择默许比竞争更优；</p>
+<p>对于更多的阶段的：BI方法仍然是有效的；</p>
+<h2 id="chapter-9-reapted-game">chapter 9 Reapted Game</h2>
+<h4 id="什么是repeated-games">什么是repeated games？</h4>
+<p>repeated game is a model about such <strong>long-term relationships</strong></p>
+<p>重复博弈包含有限重复博弈和无限重复博弈；</p>
+<h4 id="formal-model">formal model</h4>
+<p><strong>Stage</strong> <strong>game</strong></p>
+<p>在repeated game中，player play the same strategic game G repeatly which is called stage game</p>
+<p>$ G=(N,(A_i),(u_i))$满足假设:</p>
+<ul>
+<li>Player: $N={1,\cdots,n}$</li>
+<li>Action: $a_i\in A_i$(finite or compact&amp;covex in $\R^k$)</li>
+<li>Payoff: $u_i:A\to \R$</li>
+</ul>
+<h4 id="history">History</h4>
+<ul>
+<li>
+<p>某一特定策略组合的发生（包含在整个的game之中的）</p>
+</li>
+<li>
+<p>a period t <strong>history</strong> $h_t=(a_1,\cdots,a_{t-1})\in H_t=A^{t-1}$ is a sequence of the past action profiles at the beginning of period t.</p>
+</li>
+<li>
+<p>the initial history is $H_1={0}$by convention</p>
+</li>
+<li>
+<p>$H=\bigcup^\infty_{t=1}H_t$ is the set of all such histories</p>
+</li>
+<li>
+<p><strong>subhistory</strong>：在一个history中的子集合，所包含的notes is no more than whole history</p>
+</li>
+</ul>
+<h4 id="strategy-and-payoff">Strategy and payoff</h4>
+<p>Player i’s (pure) strategy $s_i\in S_i$ is a mapping from H to $A_i$</p>
+<p>Mean that the past time(history) will decisive what strategy.</p>
+<p><strong>Payoff</strong>: a strategy profile $s\in S$ generates a sequence of action profiles $(a_1,a_2,\cdots)\in A^\infty$. Player i’s discounnted average payoff given s is
+$$
+V_i(s):=(1-\delta)\sum_{t=1}^\infty \delta^{t-1}g_i(a_t)
+$$
+<strong>Notation</strong>: $\delta \in [0,1)$ is a discount factor.</p>
+<p>Another definition of repeated game: this extensive game with simultaneous moves.</p>
+<p>we use subgame perfect equilibrium.</p>
+<p>Further to difinite repeated game :play stage game T times, with the outcome of all preceding stages（在前的）在下一阶段博弈开始之前；</p>
+<p><strong>proposition</strong>：</p>
+<ul>
+<li>若阶段博弈有唯一一个NE，在有限次数下，重复博弈有唯一一个SPE；</li>
+<li>若G是一个静态博弈有多个NE，则子博弈在t&lt;T下不会是NE</li>
+</ul>
+<h4 id="minmax-payoff">Minmax Payoff</h4>
+<p>$\underline v_{i}=min_{a_{-i}\in A_{-i}}max_{a_i\in A_i}g_i(a)$</p>
+<p>intuitively $\underline v_i$is the payoff that player i can secure when player i knows the other players’ actions.</p>
+<p>minmax payoff serves as a lower bound on equilibrium payoffs in repeated games.</p>
+<h4 id="static-game">static game</h4>
+<ul>
+<li>time is absent</li>
+</ul>
+<h4 id="extensive-form-games">Extensive Form games</h4>
+<ul>
+<li>capture time</li>
+<li>With the introduction of time, <strong>players can adopt strategies contingent on the moves of others.</strong></li>
+</ul>
+<p>Key ideas</p>
+<ul>
+<li>Game trees: graphical representations</li>
+<li><strong>Histories: sequences of moves</strong></li>
+<li>Strategies: <strong>complete plans of actions</strong></li>
+<li>Subgame Perfect Equilbrium: <strong>strengthens (refines) Nash equilibrium concept</strong></li>
+</ul>
+<img src="https://cheinchi.oss-cn-hangzhou.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2022-05-19%2016.31.47.png" alt="截屏2022-05-19 16.31.47" style="zoom:30%;" />
+<h4 id="theorem">Theorem</h4>
+<p>In games with perfect information and finite actions, backwards induction identifies the set of subgame-perfect equilibria of the game exactly.</p>
+<h2 id="chapter-10--infintely-repeated-game-with-discounting">chapter 10  Infintely repeated game with discounting</h2>
+<p>无限重复博弈（有折扣）</p>
+<p>$ G(\infty,\delta)，$G：stage game</p>
+<p>折线因子：$ \delta =\frac{1}{1+r}$；表示未来收到1元价值的实际价值；</p>
+<p>$ x=(1-\delta)PV$，x表示的是DAV，平均每期的payoff</p>
+<p>再次以NAU的形式表示无限重复博弈；</p>
+<p>$ s_i(a^1,a^2,a^3,\cdots,a^t)$</p>
+<p>means history up to now；</p>
+<h3 id="trigger-strategy冷酷战略">Trigger strategy（冷酷战略）</h3>
+<p><a href="https://en.wikipedia.org/wiki/Trigger_strategy">wikipedia‘s interpretation</a>：</p>
+<p>In <a href="https://en.wikipedia.org/wiki/Game_theory">game theory</a>, a <strong>trigger strategy</strong> is any of a class of strategies employed in a repeated <a href="https://en.wikipedia.org/wiki/Game_Theory">non-cooperative game</a>.（重复非合作博弈） A player using a trigger strategy initially cooperates but punishes the opponent if a certain level of defection (i.e., the trigger) is observed.</p>
+<p>The level of <em>punishment</em> and the sensitivity of the trigger vary with different trigger strategies.</p>
+<h4 id="grime-trigger">Grime trigger</h4>
+<p><strong>strategy</strong>：</p>
+<ul>
+<li>
+<p>start with C</p>
+</li>
+<li>
+<p>持续合作(in every period in the past) otherwise, play D and play D permanently.</p>
+</li>
+<li>
+<p>$s_i(\phi)=C$</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>C</th>
+<th>D</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C</td>
+<td>2,2</td>
+<td>0,3</td>
+</tr>
+<tr>
+<td>D</td>
+<td>3,0</td>
+<td>1,1</td>
+</tr>
+</tbody>
+</table>
+<p>if every  player follows trigger strategy:
+$$
+PV_1=PV_2=\frac{2}{1-\delta}
+$$
+再分析可能一个玩家deviates stutiation stage game at one(K) period:</p>
+<table>
+<thead>
+<tr>
+<th>Period</th>
+<th>Player1</th>
+<th>Player2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>T=1</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>T=2</td>
+<td>C</td>
+<td>C</td>
+</tr>
+<tr>
+<td>….</td>
+<td>….</td>
+<td>….</td>
+</tr>
+<tr>
+<td>T=K</td>
+<td>D</td>
+<td>C</td>
+</tr>
+<tr>
+<td>….</td>
+<td>D</td>
+<td>D</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>对比其背离后的收益与背离前的收益大小</li>
+</ul>
+<p>$$
+PV_1=3+1*\delta+1*\delta^2+&hellip;=3+\frac{\delta}{1-\delta}
+$$</p>
+<p>$$
+\frac{2}{1-\delta}\geq 3+\frac{\delta}{1-\delta}
+$$</p>
+<p>因此对于纳什均衡的条件：$ \delta\geq1/2$</p>
+<h5 id="for-a-spe">for a SPE:</h5>
+<p>check SPE oucome</p>
+<p>the stage game has a NE then playing this action in every stage is a SPE outcome;(prove it’s true)</p>
+<p>so we could find out what condition one player will deviate,</p>
+<p>subgames can be devided into two groups</p>
+<ul>
+<li>
+<p>(C,C) for every player $\delta\geq 1/2$</p>
+</li>
+<li>
+<p>the other is (D,D)is played after as punishment</p>
+</li>
+</ul>
+<p>Another proposition: a strategy profile is SPE if after any history, no one gains from a one-stage deviation;(prove it’s false)</p>
+<p>so we could notice that this proposition is better way(comparing in different strategies).</p>
+<img src="https://cheinchi.oss-cn-hangzhou.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2022-06-16%2018.17.27.png" alt="截屏2022-06-16 18.17.27" style="zoom:50%;" />
+<h4 id="tit-for-tat-strategy">Tit-for-tat strategy</h4>
+<p>An <a href="https://en.wikipedia.org/wiki/Intelligent_agent">agent</a> using this strategy will first cooperate, then subsequently replicate an opponent&rsquo;s previous action. If the opponent previously was cooperative, the agent is cooperative. If not, the agent is not.</p>
+<p>its name emphasizes a nature of adversarity.</p>
+<p>首先</p>
+<p>根据参与者的不同的payoff（PV下）来划分不同的情形：</p>
+<p>Case1:</p>
+<p>Case2:</p>
+<p>Case3:</p>
+<table>
+<thead>
+<tr>
+<th>C</th>
+<th>D</th>
+<th>P1 derives</th>
+<th></th>
+<th>P2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>D</td>
+</tr>
+<tr>
+<td>C</td>
+<td>D</td>
+<td>C</td>
+<td>D</td>
+<td>D</td>
+</tr>
+<tr>
+<td>D</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>D</td>
+</tr>
+</tbody>
+</table>
+<h4 id="information-set">Information Set</h4>
+<p>Definition Info set is a collection of player i’s nodes among which i cannot distinguish.</p>
+<p>这个博弈中，参与人1可以判断，参与人2不能判断选择，可以表达更复杂的信息集合；</p>
+<p>Not allowed</p>
+<p>参与人2不能观察到参与人1的行为，</p>
+<p>树状图：2的选择集合大小要相同；</p>
+<p>假定参与人有完美的信息记忆能力；</p>
+<p>参与人本身就是一个institution，组织内的参与人都可以知道过去的信息；</p>
+<p><strong>完美信息博弈</strong>：每一个参与人都知道之前的行动；</p>
+<p>形式化的方式：树状图上所有的信息集合(information set contain just one node)</p>
+<p><strong>非完美信息博弈</strong>： not perfect information the rest of perfect info</p>
+<p>tree：</p>
+<p>类似的BI可以解决：</p>
+<p>关键是信息，而不是时序；</p>
+<p>完备信息下的策略是一组完全的行为计划会高速参与人在每一个节点做出什么决策；</p>
+<p>非信息决策中：策略无法告诉你如何判断；</p>
+<p>pure strategy：是一个完全的行动计划，specifies what play i will do at each a   set of infomation sets;</p>
+<h5 id="树图与矩阵">树图与矩阵</h5>
+<p>extensive form ：两个树图之间的转换，参与人的先手（一方不知道另一方的选择）</p>
+<p>what matters is information, no time, 时序会影响信息；</p>
+<p>参与人知道什么以及参与人不知道什么；</p>
+<p>subgame：参与人只有两个</p>
+<p>参与人payoff</p>
+<p>看参与人2和3的payoff</p>
+<p>subgame： 是博弈的一部分，非正式的说法就像树中的一个；</p>
+<p>满足一下三个条件：</p>
+<p>子博弈必须从单个节点开始：</p>
+<p>it comprises all successors to that node</p>
+<p>子博弈包含了所有子节点；也就是不能破坏任何信息集合；</p>
+<p>整个博弈也是一个subgame：</p>
+<p>spe要求在所有的子博弈中达到最优（也就是NE）</p>
+<h4 id="coalition-games-合作博弈">Coalition Games 合作博弈</h4>
+<p>合作博弈是一个关于在一个行为共同体内的参与者之间相互反应的模型；</p>
+<p>根据分割和组合参与人的方式，可以在合作博弈内看到每一组成员的行为；</p>
+<p><strong>solution</strong>：</p>
+<p>假设$ x=(x_s,x_P,x_D)$ is kernel</p>
+<p>目的：保持小部分和总体的稳定；</p>
+<h5 id="definitiona-coalitional-game-consists-of">definition：a coalitional game consists of</h5>
+<ul>
+<li>
+<p>a set of players</p>
+</li>
+<li>
+<p>for each coalition ,a set of action</p>
+</li>
+<li>
+<p>for each player,preferences over the set of all actions of all coalitions of which he is a menber</p>
+<h4 id="further-more-we-can-divide-into-two-types">Further more, we can divide into two types:</h4>
+</li>
+</ul>
+<p><img src="https://cheinchi.oss-cn-hangzhou.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2022-06-16%2018.31.22.png" alt="截屏2022-06-16 18.31.22"></p>
+<p>A matching $\mu$  is a mapping</p>
+<p>$\mu:N\to N $ such that :</p>
+<p><img src="https://cheinchi.oss-cn-hangzhou.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2022-06-16%2018.33.08.png" alt="截屏2022-06-16 18.33.08"></p>
+<p>example Two-side</p>
+<p>N=$ M\cup W$</p>
+<h4 id="完全信息与不完全信息">完全信息与不完全信息</h4>
+<p>完全信息与不完全信息：所有信息都了解的，而对于一些元素不了解的，就是不完全信息</p>
+<p>有人不知道对方的payof function：</p>
+<h3 id="海萨尼转化">海萨尼转化</h3>
+<p>不完全信息的处理方法，引入一个虚拟的参与人——自然；</p>
+<p>进一步将一个参与人的所有私人信息(private info)称为他的类型(所有的可能情况)</p>
+<p>进一步还可以定义一个人是否知道自己的类型；</p>
+<p>大多数的博弈下，将参与人的支付函数等同于他的类型；
+$$
+p_i(\theta_{-i}|\theta_i)=\frac{p_i(\theta_{-i},\theta_i)}{p(\theta_i)}=\frac{p(\theta_{-i},\theta_i)}{\sum_{-i\in\The}}
+$$</p>
+<h2 id="chapter-11-static-bayesian-game">Chapter 11 static bayesian game</h2>
+<p>incompelte infomation, one player is uncertain about another player’s payoff function.</p>
+<h4 id="definition">definition</h4>
+<p><img src="https://cheinchi.oss-cn-hangzhou.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2022-06-16%2018.35.06.png" alt="截屏2022-06-16 18.35.06"></p>
+<p>The type $t_i$ would choose is drawn by <strong>nature</strong>.</p>
+<p>Nature draws a type vector $t=(t_1,t_2,\cdots,t_n)$,where $t_i$ is drawn from the set of possible types $T_i$</p>
+<p>Nature reveals $t_i$ to player i but not to any other players</p>
+<p>the players simultaneously(同时) choose actions</p>
+<img src="https://cheinchi.oss-cn-hangzhou.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2022-06-16%2018.38.37.png" alt="截屏2022-06-16 18.318.37" style="zoom:50%;" />
+<p>Each player’s strategy must be a best response to the other players’ strategies.</p>
+<h2 id="chapter-12-dynamic-game-with-incomplete-info">chapter 12 Dynamic game with incomplete info</h2>
+<p>SPE:not only be a N.E. for the entire game, but must also constitute a N.E. in every subgame .</p>
+<p>A continuation Game</p>
+<img src="https://cheinchi.oss-cn-hangzhou.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2022-06-16%2021.14.38.png" alt="截屏2022-06-16 121.14.38" style="zoom:50%;" />
+<p>Requirement 1:At each information set , the player with the move must have a belief over the node in the infomation set.</p>
+<p>Requirement 2: player’s strategy must be “sequentially rational”. At each information set, the action taken by the players must be optimal given the player’s beliefs and everyone’s subsequent strategies.</p>
+<img src="https://cheinchi.oss-cn-hangzhou.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2022-06-16%2021.17.50.png" alt="截屏2022-06-16 21.17.50" style="zoom:50%;" />
+<p>First write down all of the payoff matrix (with expectation)</p>
+<p>Second we find out the NE in the matrix and</p>
+
+</article>
+
+                    
+                    
+                    
+
+                    
+
+
+
+                    
+  <div
+    class="-mx-2 mt-4 flex flex-col border-t px-2 pt-4 md:flex-row md:justify-between"
+  >
+    <div>
+      
+    </div>
+    <div class="mt-4 md:mt-0 md:text-right">
+      
+        <span class="text-primary-text block font-bold">Next</span>
+        <a href="https://cheinchi.github.io/docs/game_theory/chapter-1/" class="block">Chapter 1</a>
+      
+    </div>
+  </div>
+
+
+                    
+
+
+
+                </div>
+                
+                <div class="hidden lg:block lg:w-1/4">
+                    
+                    <div
+  class="
+    bg-secondary-bg
+   prose sticky top-16 z-10 hidden px-6 py-4 lg:block"
+>
+  <h3>On This Page</h3>
+</div>
+<div
+  class="sticky-toc 
+    border-s
+   hidden px-6 pb-6 lg:block"
+>
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#chapter-7">chapter 7</a>
+      <ul>
+        <li><a href="#斯塔克伯格模型描述两个寡头之间的竞争">斯塔克伯格模型——描述两个寡头之间的竞争</a></li>
+        <li><a href="#steckberg-equilibrium">Steckberg Equilibrium</a>
+          <ul>
+            <li><a href="#modified-sequential-move-game">Modified sequential-move game:</a></li>
+          </ul>
+        </li>
+        <li><a href="#leader-foller-model">Leader-foller Model</a>
+          <ul>
+            <li><a href="#brf-of-firm-2">BRF of firm 2</a></li>
+            <li><a href="#centipede-game作为一个例子说明backwards-induction-的局限性">Centipede game——作为一个例子说明backwards induction 的局限性</a>
+              <ul>
+                <li><a href="#在目前对于dynamic-game唯一的分析手段只有backward-induction">在目前，对于dynamic game唯一的分析手段只有backward induction</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#chapter-8-bargaining">chapter 8 Bargaining</a>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#最后通牒">最后通牒</a></li>
+            <li><a href="#infomation-partition">Infomation Partition</a></li>
+            <li><a href="#连续的和离散的">连续的和离散的</a>
+              <ul>
+                <li><a href="#一阶段的bargaining">一阶段的Bargaining</a></li>
+              </ul>
+            </li>
+            <li><a href="#ne与spe的区别核心威胁是否可信">NE与SPE的区别核心：威胁是否可信</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#chapter-9-reapted-game">chapter 9 Reapted Game</a>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#什么是repeated-games">什么是repeated games？</a></li>
+            <li><a href="#formal-model">formal model</a></li>
+            <li><a href="#history">History</a></li>
+            <li><a href="#strategy-and-payoff">Strategy and payoff</a></li>
+            <li><a href="#minmax-payoff">Minmax Payoff</a></li>
+            <li><a href="#static-game">static game</a></li>
+            <li><a href="#extensive-form-games">Extensive Form games</a></li>
+            <li><a href="#theorem">Theorem</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#chapter-10--infintely-repeated-game-with-discounting">chapter 10  Infintely repeated game with discounting</a>
+      <ul>
+        <li><a href="#trigger-strategy冷酷战略">Trigger strategy（冷酷战略）</a>
+          <ul>
+            <li><a href="#grime-trigger">Grime trigger</a>
+              <ul>
+                <li><a href="#for-a-spe">for a SPE:</a></li>
+              </ul>
+            </li>
+            <li><a href="#tit-for-tat-strategy">Tit-for-tat strategy</a></li>
+            <li><a href="#information-set">Information Set</a>
+              <ul>
+                <li><a href="#树图与矩阵">树图与矩阵</a></li>
+              </ul>
+            </li>
+            <li><a href="#coalition-games-合作博弈">Coalition Games 合作博弈</a>
+              <ul>
+                <li><a href="#definitiona-coalitional-game-consists-of">definition：a coalitional game consists of</a></li>
+              </ul>
+            </li>
+            <li><a href="#further-more-we-can-divide-into-two-types">Further more, we can divide into two types:</a></li>
+            <li><a href="#完全信息与不完全信息">完全信息与不完全信息</a></li>
+          </ul>
+        </li>
+        <li><a href="#海萨尼转化">海萨尼转化</a></li>
+      </ul>
+    </li>
+    <li><a href="#chapter-11-static-bayesian-game">Chapter 11 static bayesian game</a>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#definition">definition</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#chapter-12-dynamic-game-with-incomplete-info">chapter 12 Dynamic game with incomplete info</a></li>
+  </ul>
+</nav>
+</div>
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+    enableStickyToc();
+  });
+</script>
+
+                    
+                </div>
+                
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        
+        hljs.highlightAll();
+        changeSidebarHeight();
+        switchDocToc();
+    })
+</script>
+
+
+
+
+
+
+
+
+
+          </div>
+        </div>
+      
+    </main>
+    <footer class="pl-scrollbar">
+      <div class="mx-auto w-full max-w-screen-xl"><div class="text-center p-6 pin-b">
+    <p class="text-sm text-tertiary-text"> Powered by the <a href="https://github.com/wangchucheng/hugo-eureka" class="hover:text-eureka">Eureka</a> theme for <a href="https://gohugo.io" class="hover:text-eureka">Hugo</a></p>
+</div></div>
+    </footer>
+  </body>
+</html>

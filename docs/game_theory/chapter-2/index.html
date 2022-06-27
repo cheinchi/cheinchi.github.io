@@ -106,7 +106,7 @@
     },
     "headline": "Chapter 2 | Game theory | Jianqi\u0027s Website","datePublished": "2022-04-19T00:00:00+00:00",
     "dateModified": "2022-04-19T00:00:00+00:00",
-    "wordCount":  292 ,
+    "wordCount":  2086 ,
     "publisher": {
         "@type": "Person",
         "name": "Huang Jianqi",
@@ -263,7 +263,62 @@
     <li class="py-2">
         <div class="">
             <a class=" hover:text-eureka"
+                href="https://cheinchi.github.io/docs/game_theory/chapter-7-10/">Chapter 7-10</a>
+        </div>
+        
+    </li>
+    
+    
+    
+    
+    <li class="py-2">
+        <div class="">
+            <a class=" hover:text-eureka"
                 href="https://cheinchi.github.io/docs/game_theory/chapter-1/">Chapter 1</a>
+        </div>
+        
+    </li>
+    
+    
+    
+    
+    <li class="py-2">
+        <div class="">
+            <a class=" hover:text-eureka"
+                href="https://cheinchi.github.io/docs/game_theory/chapter-3/">Chapter 3</a>
+        </div>
+        
+    </li>
+    
+    
+    
+    
+    <li class="py-2">
+        <div class="">
+            <a class=" hover:text-eureka"
+                href="https://cheinchi.github.io/docs/game_theory/chapter-4/">Chapter 4</a>
+        </div>
+        
+    </li>
+    
+    
+    
+    
+    <li class="py-2">
+        <div class="">
+            <a class=" hover:text-eureka"
+                href="https://cheinchi.github.io/docs/game_theory/chapter-5/">Chapter 5</a>
+        </div>
+        
+    </li>
+    
+    
+    
+    
+    <li class="py-2">
+        <div class="">
+            <a class=" hover:text-eureka"
+                href="https://cheinchi.github.io/docs/game_theory/chapter-6/">Chapter 6</a>
         </div>
         
     </li>
@@ -308,7 +363,7 @@
   </div>
   <div class="me-6 my-2">
     <i class="fas fa-clock me-1"></i>
-    <span>1 min read</span>
+    <span>5 min read</span>
   </div>
 
   
@@ -320,7 +375,8 @@
   
   
 
-  <h3 id="static-game-of-complete-info">static Game of complete info</h3>
+  <h2 id="chapter-2-perfect-infomation-ne">chapter 2 Perfect infomation NE</h2>
+<h3 id="static-game-of-complete-info">static Game of complete info</h3>
 <h4 id="def">def:</h4>
 <p>静态博弈：通过$ (N,{A_i}_{i\epsilon N },{u_i}) $来刻画静态博弈的形式。</p>
 <ul>
@@ -339,14 +395,164 @@
 </li>
 </ul>
 <h4 id="再举例囚徒困境">再举例：囚徒困境</h4>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>deny</th>
+<th>Confess</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>deny</strong></td>
+<td>-1,-1</td>
+<td>-9,0</td>
+</tr>
+<tr>
+<td><strong>confess</strong></td>
+<td>0,-9</td>
+<td>-6,-6</td>
+</tr>
+</tbody>
+</table>
+<p>利用${ANU}$分析方法：</p>
+<blockquote>
+<p>$ N={1,2}$</p>
+<p>$A_1=A_2={deny, confess}$</p>
+<p>$u_1(d,d)=u_2(d,d)=-1$</p>
+<p>$u_1(d,c)=u_2(c,d)=-9$</p>
+<p>$u_1(c,d)=u_2(d,c)=0$</p>
+<p>$u_1(c,c)=u_2(c,c)=-6$</p>
+</blockquote>
+<p>囚徒困境特点：</p>
+<blockquote>
+<p>只发生一次；所有人理性（reason与rational）；同时且独立参与博弈</p>
+</blockquote>
+<h4 id="修正的pdperison-dilemma">修正的PD(perison dilemma)</h4>
+<p>对于player2，仍然偏好于D；</p>
+<p>若1知道2绝不会选择D，因此他也会选择C；</p>
+<p>因此对此我们新增了一个假设：参与人1需要推断2的选择策略；</p>
+<h4 id="美数猜">美数猜</h4>
+<p>在这个case下，我们使用三次项的知识参与平均数的猜测，当然有人会用更多的项数去猜测——《就业货币利息通论》凯恩斯</p>
+<p>同样对于股票市场：股票不会因人们对于其的基本价值而定价，而是基于人们思考别人思考的价值是什么和我们的思考关于这些理念等等（不断循环）</p>
+<h3 id="共同知识common-knowledge">共同知识Common Knowledge</h3>
+<p>博弈论中较多的核心假设：理性是共同知识$\to$所有人都是理性，所有人知道所有人都是理性的……</p>
+<p><strong>定义状态空间</strong>：状态空间描述了可能发生的所有可能；</p>
+<p>$ \Omega={\omega_1,\cdots,\omega_n}$同时是有限的状态空间</p>
+<p><strong>定义信息(information/belief)结构</strong>：$ (\Omega,(I_i)<em>{i\in N},(p_i)</em>{i\in N})$</p>
+<p>$I_i:\Omega\to2^{\Omega}$为每一个状态空间的分割对于i认为可能正确的状态是$\Omega$，</p>
+<p>$ p_{i,I_i(\omega)}\in\Delta(I_i(\omega))$：定义为i在状态$\omega$下的信仰；</p>
+<p>进一步说明$ \omega$的含义：包括了所有相关的可能情况；只有一个是正确的，而其余没有假定的情况在参与人的belief中被encode</p>
+<p><strong>定义状态空间的子集</strong>为一个事件$ A={\omega_1,\omega_2}\in \Omega$</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>状态1</th>
+<th>状态2</th>
+<th>状态3</th>
+<th>状态4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>red</td>
+<td>red</td>
+<td>White</td>
+<td>White</td>
+</tr>
+<tr>
+<td>2</td>
+<td>White</td>
+<td>red</td>
+<td>Red</td>
+<td>White</td>
+</tr>
+</tbody>
+</table>
+<p>状态空间内包含四种可能状态$ \omega$组成；</p>
+<p><strong>定义事件</strong>：事件是由某些状态的集合。</p>
+<p><strong>信息分割</strong>： 分割就是将集合划分为不同的子集，两两间的交集为空，且所有子集的并集为全集。</p>
+<p><strong>信息分割</strong>实际上是定义了个体拥有的信息结构——个体可以区分哪些信息。</p>
+<p>信息分割一种等价的定义：信息函数$ f:\Omega\to2^\Omega$定义了当个体处于某个状态下所拥有的信息集。</p>
+<p>知识函数：$ k:2^\Omega\to 2^\Omega$，个体能够知道在哪个信息集下该事件一定发生（形成的是一一映射）；
+$$
+K_i(F)={\omega|I_i(\omega)\subseteq F}
+$$
+定义$K_i(A)$为个体i在这个集合所包含的状态中知道A发生了。进一步推导出$ K_j(K_i(A))$为j知道i知道事件A发生；</p>
+<p>$ K^1A$为每个人都知道事件A发生了；
+$$
+K(F)=\cap_{i\in N}K_i(F)
+$$
+在更高的维度上定义$K^2A$为每个人都知道每个人知道事件A发生了；</p>
+<p>定义  ，如果 <img src="https://www.zhihu.com/equation?tex=K%5E%7B%5Cinfty%7DA" alt="[公式]"> 不等于空集，即存在某个 <img src="https://www.zhihu.com/equation?tex=%5Comega_i%5Cin+K%5E%7B%5Cinfty%7DA" alt="[公式]"> ，那么我们就说</p>
+<p>在 <img src="https://www.zhihu.com/equation?tex=%5Comega_i" alt="[公式]"> 状态下是共同知识
+$$
+K^{\infty}(F)=\cap_{t\geq0}K^t(F)
+$$</p>
+<ul>
+<li>
+<p>若$K_iA=A$则说明A对于$ i$来说是一个自明事件，若$ \forall i\in N$都有$K_iA=A$，那么说A是一个共明事件；</p>
+</li>
+<li>
+<p>因此判断一个事件在状态是否为共同知识，秩序找到一个包含$ \omega\in A$且$A$的子集是共明事件即可；</p>
+</li>
+</ul>
+<h4 id="公众事件">公众事件</h4>
+<p>定义：$ F^{&rsquo;}$为公共事件若$ F^{&rsquo;}=\cup_{\omega^{&rsquo;}\in F^{&rsquo;}}I_i(\omega^{&rsquo;})$</p>
 <h3 id="其他的一些策略">其他的一些策略</h3>
 <h4 id="security-level">security level</h4>
 <p>每个参与者可得到最少的保障在参与博弈的过程中</p>
+<ul>
+<li>
+<p>$\min_{a_j\in A_j}max_{a_i\in A_i}u_i(a_i,a_j)$：玩家i知道对方的策略，要做的更好，j的原则是尽可能使得i获益最低</p>
+</li>
+<li>
+<p>$\max_{a_j\in A_j}min_{a_i\in A_i}u_i(a_i,a_j)$</p>
+</li>
+<li>
+<p>$\min_{a_j\in A_j}max_{a_i\in A_i}u_i(a_i,a_j)\leq\min_{a_j\in A_j}max_{a_i\in A_i}u_i(a_i,a_j)$</p>
+</li>
+</ul>
+<h4 id="vcg-mechanism">VCG Mechanism</h4>
+<p>Vickrey-clark-gloves(VCG) mechanism</p>
+<p>维克里-克拉克-格罗夫斯机制</p>
+<p>$ (x^<em>,(\Omega_i),(m_i^</em>))$为一个VCG机制若满足以下条件：</p>
+<ul>
+<li>
+<p>$ x^*(\omega)\in max_{x\in X}\sum_ju_j(x,\omega_j)$</p>
+</li>
+<li>
+<p>$ m^<em><em>i(\omega)=-\sum</em>{j\ u=i}u_j(x^</em>(\omega),\omega_j)+h_i(\omega_{-i})$对于一些 $ h_i:\Omega_{-i}\to \R$</p>
+</li>
+</ul>
+<p>在<strong>VCG</strong>机制下，<strong>存在占优策略对于代理人去真实地发出他们的信息</strong></p>
+<p>prove：</p>
 <h4 id="竞争策略">竞争策略</h4>
+<p>将囚徒困境中的不同的payoff分类：${T,R,P,S}，besides：T&gt;R&gt;P&gt;S$代表temptation reward punishment sucker</p>
 <h4 id="严格占优策略strictly-dominant-strategies">严格占优策略（strictly dominant strategies)</h4>
-<p><strong>def</strong>:</p>
-<h4 id="被占优策略">被占优策略</h4>
-<h4 id="iterated-elimination-of-strictly-dominated-strategies">iterated elimination of strictly dominated strategies</h4>
+<p><strong>def</strong>: $ a_i\in A_i$严格占优$a&rsquo;<em>i\in A_i $    若$ u_i(a_i,a</em>{-i})&gt;u_i(a&rsquo;<em>i,a</em>{-i})$对于所有的$a_{-i}\in A_i$</p>
+<p>与严格占优相对的就是严格被占优的策略；</p>
+<h4 id="iterately-eliminate-dominated-strategies">iterately eliminate dominated strategies</h4>
+<p>IEDS under the assumption that “I know that you know that other players know… that everyone knows the payoffs and that no one would ever use a dominated strategy”</p>
+<p>For all $i\in N$, set $S^0_i=S_i$ and define $S^k_i$ recursively by
+$$
+S^k_i={s_i\in S_k^{k-1}}
+$$
+the set of pure strategies of player i that survive iterated deletiion of s. dominated strategies is $S_i^\infty=\cap_{k\geq0}S_i^k$ the set of surviving mixed strategies is
+$$
+\sigma_i\in \Delta(S_i^\infty)
+$$
+<strong>Remark</strong>:</p>
+<p>in a finite game, the elimination precedure ends in a finite number of steps.</p>
+<p>ISD：剔除严格被占优策略的方法，基于理性人的选择，不选择严格被占优的策略（即有更好的策略选择，优先选择更好的策略）</p>
+<h4 id="never-best-response">Never Best Response</h4>
+<p>A strategy $\sigma\in\Delta (S_i)$ is never a best reponse for player i if it is not a best response to any correlated belief $\sigma_{-i}\in \Delta(S_{-i})$</p>
+<p>Theorem 1: in a finite game, a strategy is never a best response iff it is s. dominated.</p>
+<h4 id="convergence">Convergence</h4>
+<p>if convergence obtains for all initial strategy profiles sufficeiently close to the steady state, we say that the steady state is asymptotically stable.</p>
 </article>
 
                     
@@ -366,7 +572,7 @@
         <span class="text-primary-text block font-bold"
           >Previous</span
         >
-        <a href="https://cheinchi.github.io/docs/game_theory/chapter-1/" class="block">Chapter 1</a>
+        <a href="https://cheinchi.github.io/docs/game_theory/chapter-6/" class="block">Chapter 6</a>
       
     </div>
     <div class="mt-4 md:mt-0 md:text-right">
@@ -397,22 +603,31 @@
 >
   <nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#chapter-2-perfect-infomation-ne">chapter 2 Perfect infomation NE</a>
       <ul>
         <li><a href="#static-game-of-complete-info">static Game of complete info</a>
           <ul>
             <li><a href="#def">def:</a></li>
             <li><a href="#策略与行为的区别">策略与行为的区别：</a></li>
             <li><a href="#再举例囚徒困境">再举例：囚徒困境</a></li>
+            <li><a href="#修正的pdperison-dilemma">修正的PD(perison dilemma)</a></li>
+            <li><a href="#美数猜">美数猜</a></li>
+          </ul>
+        </li>
+        <li><a href="#共同知识common-knowledge">共同知识Common Knowledge</a>
+          <ul>
+            <li><a href="#公众事件">公众事件</a></li>
           </ul>
         </li>
         <li><a href="#其他的一些策略">其他的一些策略</a>
           <ul>
             <li><a href="#security-level">security level</a></li>
+            <li><a href="#vcg-mechanism">VCG Mechanism</a></li>
             <li><a href="#竞争策略">竞争策略</a></li>
             <li><a href="#严格占优策略strictly-dominant-strategies">严格占优策略（strictly dominant strategies)</a></li>
-            <li><a href="#被占优策略">被占优策略</a></li>
-            <li><a href="#iterated-elimination-of-strictly-dominated-strategies">iterated elimination of strictly dominated strategies</a></li>
+            <li><a href="#iterately-eliminate-dominated-strategies">iterately eliminate dominated strategies</a></li>
+            <li><a href="#never-best-response">Never Best Response</a></li>
+            <li><a href="#convergence">Convergence</a></li>
           </ul>
         </li>
       </ul>

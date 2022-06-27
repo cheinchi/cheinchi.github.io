@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<title>Game theory | Jianqi&#39;s Website</title>
+<title>Chapter 5 | Game theory | Jianqi&#39;s Website</title>
 
 <meta name="generator" content="Hugo Eureka 0.9.1" />
 <link rel="stylesheet" href="https://cheinchi.github.io/css/eureka.min.9cec6350e37e534b0338fa9a085bf06855de3b0f2dcf857e792e5e97b07ea905d4d5513db554cbc26a9c3da622bae92d.css">
@@ -73,7 +73,7 @@
 
 
 <meta name="description"
-  content="upload some notes in studying game theory">
+  content="basic concept about auction">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -86,7 +86,11 @@
       "@type": "ListItem",
       "position": 2 ,
       "name":"Game theory",
-      "item":"https://cheinchi.github.io/docs/game_theory/"}]
+      "item":"https://cheinchi.github.io/docs/game_theory/"},{
+      "@type": "ListItem",
+      "position": 3 ,
+      "name":"Chapter 5",
+      "item":"https://cheinchi.github.io/docs/game_theory/chapter-5/"}]
 }
 </script>
 
@@ -98,25 +102,27 @@
     "@type": "Article",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://cheinchi.github.io/docs/game_theory/"
+        "@id": "https://cheinchi.github.io/docs/game_theory/chapter-5/"
     },
-    "headline": "Game theory | Jianqi\u0027s Website","wordCount":  59 ,
+    "headline": "Chapter 5 | Game theory | Jianqi\u0027s Website","datePublished": "2022-04-20T00:00:00+00:00",
+    "dateModified": "2022-06-27T00:00:00+00:00",
+    "wordCount":  153 ,
     "publisher": {
         "@type": "Person",
         "name": "Huang Jianqi",
         },
-    "description": "upload some notes in studying game theory"
+    "description": "basic concept about auction"
 }
-</script><meta property="og:title" content="Game theory | Jianqi&#39;s Website" />
-<meta property="og:type" content="website" />
+</script><meta property="og:title" content="Chapter 5 | Game theory | Jianqi&#39;s Website" />
+<meta property="og:type" content="article" />
 
 
 
-<meta property="og:url" content="https://cheinchi.github.io/docs/game_theory/" />
+<meta property="og:url" content="https://cheinchi.github.io/docs/game_theory/chapter-5/" />
 
 
 
-<meta property="og:description" content="upload some notes in studying game theory" />
+<meta property="og:description" content="basic concept about auction" />
 
 
 
@@ -130,14 +136,17 @@
 
 
 
-<meta property="og:updated_time" content="2022-04-16T00:00:00&#43;00:00" />
+<meta property="article:published_time" content="2022-04-20T00:00:00&#43;00:00" />
+
+
+<meta property="article:modified_time" content="2022-06-27T00:00:00&#43;00:00" />
 
 
 
 <meta property="article:section" content="docs" />
 
 
-<link rel="alternate" type="application/rss+xml" href="https://cheinchi.github.io/docs/game_theory/index.xml" title="Jianqi's Website" />
+
 
 
   <body class="flex min-h-screen flex-col">
@@ -225,6 +234,11 @@
 
 
 
+
+
+
+
+
 <div id="sidebar-title" class="md:hidden mx-4 px-2 pt-4 pb-2 md:border-b text-tertiary-text md:text-primary-text">
     <span class="font-semibold">Table of Contents</span>
     <i class='fas fa-caret-right ms-1'></i>
@@ -233,7 +247,7 @@
 <div id="sidebar-toc"
     class="hidden md:block overflow-y-auto mx-6 md:mx-0 pe-6 pt-2 md:max-h-doc-sidebar bg-primary-bg md:bg-transparent">
     <div class="flex flex-wrap ms-4 -me-2 p-2 bg-secondary-bg md:bg-primary-bg rounded">
-        <a class="text-eureka hover:text-eureka"
+        <a class=" hover:text-eureka"
             href="https://cheinchi.github.io/docs/game_theory/">Game theory</a>
         
         
@@ -292,7 +306,7 @@
     
     <li class="py-2">
         <div class="">
-            <a class=" hover:text-eureka"
+            <a class=" text-eureka  hover:text-eureka"
                 href="https://cheinchi.github.io/docs/game_theory/chapter-5/">Chapter 5</a>
         </div>
         
@@ -327,6 +341,8 @@
 
 
 
+
+
             </div>
 
         </div>
@@ -334,7 +350,7 @@
             <div class="flex">
                 <div class="w-full lg:w-3/4 px-6">
                     <article class="prose">
-  <h1 class="mb-4">Game theory</h1>
+  <h1 class="mb-4">Chapter 5</h1>
 
   <div
   class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"
@@ -342,7 +358,7 @@
   <div class="me-6 my-2">
     <i class="fas fa-calendar me-1"></i>
     <span
-      >2022-04-16</span
+      >2022-04-20</span
     >
   </div>
   <div class="me-6 my-2">
@@ -350,15 +366,6 @@
     <span>1 min read</span>
   </div>
 
-  
-    <div class="me-6 my-2">
-      <i class="fas fa-folder me-1"></i>
-      
-        <a href="https://cheinchi.github.io/categories/economics/" class="hover:text-eureka"
-          >economics</a
-        >
-      
-    </div>
   
 
   
@@ -368,10 +375,27 @@
   
   
 
-  <h3 id="2021-2022第二学年-博弈论课程笔记">2021-2022第二学年 博弈论课程笔记</h3>
-<p>授课老师：<a href="http://mse.cufe.edu.cn/info/1017/1408.htm">Lei Zu</a></p>
-<p>授课范围：basic introduction to Game theory includes Nash equilibrium PBE,BNE,SPE etc. Cooperative game are also introduced.</p>
-<p>课时数：3 classtime/week</p>
+  <h2 id="chapter-5--auction">chapter 5  Auction</h2>
+<h4 id="a-first-price-auction">A first-price auction</h4>
+<p>A first-price auction the winner pays the price p he bids.</p>
+<p>highest wins and pays the price he bids</p>
+<p>Def a first-price sealed-bid auction with <strong>complete information</strong></p>
+<p>$$
+N={1,2,3&hellip;n}\
+A_i=[0,]
+\u_i=v_i-p
+$$
+v~i~ the player i attaches to the object</p>
+<ul>
+<li>v~1~&gt;v~2~&gt;v~3~&gt;v~4~…&gt;0</li>
+</ul>
+<p>如果玩家i</p>
+<h4 id="best-response-funtion--最优反映函数">Best response funtion : 最优反映函数：</h4>
+<p>对每一参与人  ，还可以给出<strong>最优反应函数（best-response function)</strong></p>
+<p>，如下：</p>
+<p>对任一 <img src="https://www.zhihu.com/equation?tex=a_%7B-i%7D%5Cin+A_%7B-i%7D" alt="[公式]"> 定义 <img src="https://www.zhihu.com/equation?tex=B_i(a_%7B-i%7D)" alt="[公式]"> 为参与人 <img src="https://www.zhihu.com/equation?tex=i" alt="[公式]"> 在给定 <img src="https://www.zhihu.com/equation?tex=a_%7B-i%7D" alt="[公式]"> 下最佳行动集合：</p>
+<p><img src="https://www.zhihu.com/equation?tex=B_i(a_%7B-i%7D)%3D%7Ba_i%5Cin+A_i%3A(a_%7B-i%7D%2C+a_%7Bi%7D)%5Csucceq_i(a_%7B-i%7D%2C+a'_%7Bi%7D)%2C+%5Crm+for+all+%5Cit+a'_i%5Cin+A_i+%7D" alt="[公式]"></p>
+
 </article>
 
                     
@@ -383,6 +407,25 @@
 
 
                     
+  <div
+    class="-mx-2 mt-4 flex flex-col border-t px-2 pt-4 md:flex-row md:justify-between"
+  >
+    <div>
+      
+        <span class="text-primary-text block font-bold"
+          >Previous</span
+        >
+        <a href="https://cheinchi.github.io/docs/game_theory/chapter-4/" class="block">Chapter 4</a>
+      
+    </div>
+    <div class="mt-4 md:mt-0 md:text-right">
+      
+        <span class="text-primary-text block font-bold">Next</span>
+        <a href="https://cheinchi.github.io/docs/game_theory/chapter-6/" class="block">Chapter 6</a>
+      
+    </div>
+  </div>
+
 
                     
 
@@ -406,9 +449,14 @@
 >
   <nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#chapter-5--auction">chapter 5  Auction</a>
       <ul>
-        <li><a href="#2021-2022第二学年-博弈论课程笔记">2021-2022第二学年 博弈论课程笔记</a></li>
+        <li>
+          <ul>
+            <li><a href="#a-first-price-auction">A first-price auction</a></li>
+            <li><a href="#best-response-funtion--最优反映函数">Best response funtion : 最优反映函数：</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
   </ul>
